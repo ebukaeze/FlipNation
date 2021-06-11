@@ -1,0 +1,41 @@
+@import './_variables';
+@import './_navbar';
+@import './home';
+@import './masonry-post';
+@import './post-masonry';
+@import './footer';
+@import './tag-row';
+@import './post-grid';
+
+html body{
+    font-family: -apple-system, system-ui, BinkMacSystemFont, 'segoe-ui', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    font-weight: 500;
+    background-color: $background;
+    
+   /* background-image: url('../images/image7.jpg'); */
+}
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    
+}
+
+.row {
+    margin: 4em 20px;
+}
+
+.overlay::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 10%);
+}
