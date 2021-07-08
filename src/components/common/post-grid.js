@@ -23,7 +23,11 @@ import { TagRow } from ".";
              left: 0,
              behavior: 'smooth'
          })
-     },[current, pageSize])
+     },[current, pageSize]);
+
+     function truncate(str, n){
+      return str?.length  > n ? str.substr(0, n - 1) + "..." : str;
+     }
 
   return(
       <section className="grid-pagination-container">
@@ -49,8 +53,8 @@ import { TagRow } from ".";
                                - {post.date}
                           </span>
                           <p className="description-text">
-                              {post.description}
-                              <Link to="#">Read more...</Link>
+                              {truncate(post.description, 80 )}
+                              <Link to="#">Read more</Link>
                           </p>
                       </p>
                   </div>
