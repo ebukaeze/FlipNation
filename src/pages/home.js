@@ -21,8 +21,8 @@ const featuredConfig = {
     }, 
     3: {
         height: "630px",
-        marginLeft: "30px",
-        width: "630px"
+        marginLeft: "110px",
+        width: "660px"
     }
 
 }
