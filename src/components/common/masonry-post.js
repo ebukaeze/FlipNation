@@ -6,7 +6,9 @@ export default function MasonryPost({post, tagsOnTop}) {
 
     const windowWidth = window.innerWidth;
 
-const imageBackground = { backgroundImage: `url("${post.image}")`}
+const imageBackground = { backgroundImage: `url("${post.image}")`,
+transition: "transform 450ms"
+}
 
 const style = windowWidth > 900 ? {...imageBackground, ...post.style } : imageBackground;
 
